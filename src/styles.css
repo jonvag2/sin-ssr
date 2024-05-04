@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/css/font-awesome/font-awesome.min.css';
+@import './assets/css/simple-line-icons/simple-line-icons.css';
+@import './assets/css/bootstrap/bootstrap.min.css';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700';
+@import './assets/plugins/rs-plugin/css/settings.css';
+@import './assets/css/animate/animate.min.css';
+@import './assets/css/style.css';
+@import './assets/css/colors/aqua.css';
+
+@keyframes slide-out {
+    to {
+    transform: translate(1200px);    
+    }
+}
+    
+@keyframes slide-in {
+    from {
+        transform: translate(-1200px);    
+    }
+}
+
+::view-transition-new(serie-slide){
+    animation-duration: 500ms;
+    animation-name: -ua-view-transition-fade-in, slide-in;
+}
+
+::view-transition-old(serie-slide){
+    animation-duration: 500ms;
+    animation-name: -ua-view-transition-fade-out, slide-out;
+}

@@ -1,0 +1,80 @@
+nav{
+    background-color: rgba(0, 0, 0, 0.185);
+}
+
+nav:hover{
+    background-color: rgba(0, 0, 0, 0.368);
+}
+.single-day-regular {
+    font-family: "PT Sans Narrow", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.custom-icon{
+    margin-right: 8px;
+}
+
+.box-title{
+    margin-top: -8px;
+    display: flex;
+}
+.title-logo{
+    padding-top: 17px;
+    display: flex;
+    width: 300px;
+}
+.talento{
+    text-transform: none;
+
+}
+
+.custom-icon:hover{
+    transform: scale(1.1);
+    /* box-shadow: 5px 5px 5px #2ecc71; */
+    filter: drop-shadow(2px 2px 2px #2ecc71);
+}
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */
+    .box-title{
+        margin-top: 0px;
+        margin-left: 15px;
+        display: flex;
+    }
+    .talento{
+        font-size: 25px;
+        transition-duration: 0.15s;
+        color: rgb(45, 183, 42);
+
+    }
+    .talento:hover{
+        font-size: 18px;
+        color: rgb(212, 1, 115);
+        filter: drop-shadow(1px 1px 1px rgb(239, 13, 133));
+    
+    }
+    .title-logo{
+        margin-left: -25px;
+    }
+}
+
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+	.contenedor{
+		border: solid purple;
+	}
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+
+    .talento{
+        font-size: 25px;
+        transition-duration: 0.15s;
+        color: rgb(45, 183, 42);
+    }
+    .talento:hover{
+        font-size: 22px;
+        color: rgb(239, 13, 133);
+        filter: drop-shadow(1px 1px 1px rgb(239, 13, 133));
+    
+    }
+}
+
