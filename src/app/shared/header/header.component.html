@@ -1,13 +1,20 @@
 <main [style.view-transition-name]="'serie-slide'">
+    
     <div class="contenedor" >
+        <article>
+            <app-nav></app-nav>
+        </article>
         <div class="wrap" >
-            <div class="box">
-                <span>Tu potencial, nuestro objetivo...</span>
-                <h1>Desarrolla tus habilidades y alcanza tus metas</h1>
-                <p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Dolorem dolore ea aut fugit officiis nesciunt nulla, voluptate perferendis maiores!.</p>
+            <div class="box" >
+                <span >Tu potencial, nuestro objetivo...</span>
+                <h1 data-aos="zoom-in"
+                data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">Desarrolla tus habilidades y alcanza tus metas</h1>
+                <p data-aos="zoom-out-up" data-aos-duration="2500">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Dolorem dolore ea aut fugit officiis nesciunt nulla, voluptate perferendis maiores!.</p>
                 <div class="botones">
-                    <a href="#contact" class="btn1">Contactanos</a>
-                    <a href="#" class="btn1">Podcast</a>					
+                    <a href="#contact" class="btn1" data-aos="fade-right"
+                    data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">Contactanos</a>
+                    <a href="#" class="btn1" data-aos="fade-left"
+                    data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">Podcast</a>					
                 </div>
             </div>
         </div>

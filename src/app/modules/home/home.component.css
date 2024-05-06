@@ -77,15 +77,21 @@
 
 
   .curveUpColor, .curveDownColor {
-    fill: #fff;
-    stroke: #fff;
-    /* fill: #c41919;
-    stroke: #3d3030; */
+    /* fill: #fff;
+    stroke: #fff; */
     position: absolute;
     left: 0;
     z-index: 1;
   }
-  
+
+  .green {
+    fill: #37502f;
+    stroke: #37502f;
+  }
+  .white {
+    fill: #fff;
+    stroke: #fff;
+  }
   .curveUpColor {
     margin-top: -100px;
   }

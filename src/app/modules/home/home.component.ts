@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import * as AOS from 'aos';
+
 
 @Component({
   selector: 'app-home',
@@ -11,4 +13,8 @@ export class HomeComponent {
   hours = 1500;
   support = 120;
   coffe = 1550;
+
+  ngOnInit():void{
+    AOS.init();
+  }
 }

@@ -1,13 +1,15 @@
     <a href="#" class="scrollToTop">
         <i class="fa fa-angle-up fa-2x"></i>
     </a>
-    <app-nav></app-nav>
+    <!-- <app-method></app-method> -->
 
+    
     <app-header></app-header>
+
     
     <section class="page-title bg-ligth text-center padd-tb-60 " id="products" >
         <div class="container">
-            <div class="card wow fadeInUp" >
+            <div class="card wow fadeInUp" data-aos="zoom-out-up" data-aos-duration="1000">
                 <h3 class="entry-title"> Talento Activo <br> </h3>
                 <h3 class="entry-title">
                 <a href="#products"> constituye una oferta para instituciones y empresas, públicas y privadas, <br> cuyo reto es alcanzar objetivos altamente productivos y sostenible
@@ -17,10 +19,11 @@
         </div>
     </section>
     
-    <section class="bg-ligth produc" >
-        <div class="container" >
+    <section >
+        <div class="container" class="bg-ligth produc" data-aos="fade-up"
+        data-aos-duration="2000"> 
             <div class="row ">
-                <div class="col-md-4 col-sm-6 wow fadeInUp shadow-nosotros">
+                <div class="col-md-4 col-sm-6 wow fadeInUp shadow-nosotros" >
                     <div class="feature-box style2 ">
                         <i class="icon icon-puzzle circle"></i>
                         <h4>Marketing digital para PYMES</h4>	
@@ -30,7 +33,7 @@
                         <p class="text-left">●  Creación y desarrollo del área de comercialización y ventas en organizaciones PYMES</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 wow fadeInUp shadow-nosotros">
+                <div class="col-md-4 col-sm-6 wow fadeInUp shadow-nosotros" >
                     <div class="feature-box style2">
                         <i class="icon icon-mouse circle"></i>
                         <h4>Eventos virtuales dirigidos a comunidades PYMES </h4>	
@@ -41,7 +44,7 @@
                         <p class="text-left">● Acompañamiento para el sostenimiento de emprendimientos.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 wow fadeInUp shadow-nosotros">
+                <div class="col-md-4 col-sm-6 wow fadeInUp shadow-nosotros" >
                     <div class="feature-box style2 text-left">
                         <i class="icon icon-plane circle"></i>
                         <h4>Desarrollo de liderazgo</h4>	
@@ -60,14 +63,20 @@
         </div>
     </section>
     
-     <svg class="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+     <svg class="curveDownColor white" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" >
         <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
     </svg>
+    <div style="padding-top: 70px; background-color: #37502f;"> <!--  este div es para ponerle una distancia mayor a las dos secciones porque la curva le quita vista-->
+        <app-ourservice ></app-ourservice>
+    </div>
+
     
     
     
     <section id="team" class="bg-dark padd-tb-80 image-v2 bg-fixed">
-        <div class="container">
+       
+        <div class="container" data-aos="fade-up"
+        data-aos-duration="3000">
         
             <div class="heading text-center padd-b-30 wow fadeIn">
                 <h2><strong>OUR TEAM</strong></h2>
@@ -194,6 +203,7 @@
     <svg class="curveUpColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
         <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
     </svg>
+
 
     <section id="pricing" class="padd-tb-60">
         <div class="container">

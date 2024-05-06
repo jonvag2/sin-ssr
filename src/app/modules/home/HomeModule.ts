@@ -8,6 +8,7 @@ import { HeaderComponent } from "../../shared/header/header.component";
 import { NavComponent } from "../../shared/nav/nav.component";
 import { FooterComponent } from "../../shared/footer/footer.component";
 import { ConstruccionComponent } from '../../shared/construccion/construccion.component';
+import { MethodComponent } from "./components/method/method.component";
 
 
 
@@ -23,7 +24,8 @@ import { ConstruccionComponent } from '../../shared/construccion/construccion.co
         HeaderComponent,
         NavComponent,
         FooterComponent,
-        ConstruccionComponent
+        ConstruccionComponent,
+        MethodComponent
     ]
 })
 export class HomeModule {

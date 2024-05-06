@@ -74,7 +74,7 @@
 	});
 
 	
-	$(window).scroll(function() {    
+	/* $(window).scroll(function() {    
 		var scroll = $(window).scrollTop();
 
 		if (scroll >= 100) {
@@ -83,7 +83,7 @@
 			$(".navbar-fixed-top").removeClass("has-bg");
 		}
 				
-	});
+	}); */
 	
 	
 	//	RESIZE
