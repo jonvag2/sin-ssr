@@ -19,12 +19,12 @@ export const routes: Routes = [
     pathMatch: 'full',
   } */
   {
-    path: "construcion",
+    path: "construccion",
     component: ConstruccionComponent,
   },
   {
     path: '**',
-    redirectTo: 'construcion',
+    redirectTo: 'construccion',
     /* redirectTo: 'error/404', */
   }
 ];

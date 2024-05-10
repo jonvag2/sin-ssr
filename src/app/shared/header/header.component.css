@@ -23,10 +23,10 @@
 	flex-wrap: wrap;
 	max-width: 100%;
 	height: 100vh;
-	background-image: url(./../../../assets/img/banner/banner_v10.jpg);
+	background-image: url(./../../../assets/talentoactivo/emprendimiento_mujer_1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: left;
+	background-position: center center;
 }
 .contenedor .wrap{
 	max-width: 1000px;
@@ -46,6 +46,8 @@
 	font-size: 18px;
 	letter-spacing: 2px;
 	font-weight: 300;
+	background-color: rgba(0, 0, 0, 0.199);
+	padding-left: 15px;
 	
 }
 .contenedor .wrap .box h1{
@@ -53,11 +55,18 @@
 	font-size: 32px;
 	line-height: .9;
 	padding-bottom: 10px;
+	background-color: rgba(0, 0, 0, 0.199);
+	padding-left: 15px;
+	width: 70%;
+
 	
 }
-.contenedor .wrap .box p{
-	font-size: 15px;
+.contenedor .wrap .box .cajasubtitle p{
+	font-size: 20px;
+	font-weight: 800;
 	line-height: 1.2;
+	margin-bottom: 0px;
+	height: 48%;
 }
 .contenedor .wrap .box .botones{
 	display: flex;
@@ -82,6 +91,26 @@
 	font-weight: 800;
   }
 
+  .cajasubtitle{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.subtitle1{
+	background-color: rgba(0, 0, 0, 0.199);
+	padding-left: 15px;
+	width: 80%;
+	margin-bottom: 10px;
+
+}
+.subtitle2{
+	width: 50%;
+	background-color: rgba(0, 0, 0, 0.199);
+	padding-left: 15px;
+
+}
+
+
 
 
 
@@ -105,18 +134,19 @@
 		font-size: 15px;
 		letter-spacing: 1px;
 		font-weight: 300;
+
 	}
 	.contenedor .wrap .box h1{
 		color: #fff;
 		font-size: 25px;
 		line-height: 1.2;
 		padding-bottom: 10px;
+
 		
 	}
 	.contenedor .wrap .box p{
 		font-size: 15px;
 		line-height: 1.2;
-		margin-bottom: 60px;
 	}
 
 	.contenedor .wrap .box .botones .btn1{
@@ -157,7 +187,6 @@
 	.contenedor .wrap .box p{
 		font-size: 18px;
 		line-height: 1.5;
-		margin-bottom: 90px;
 	}
 	
 

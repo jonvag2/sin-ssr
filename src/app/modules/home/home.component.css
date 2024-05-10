@@ -1,3 +1,8 @@
+.navigation{
+  background-color: yellow;
+  width: 1200px;
+  height: 500px;
+}
 .card{
   width: 80wv;
   padding: 30px;
@@ -89,8 +94,12 @@
     stroke: #37502f;
   }
   .white {
-    fill: #fff;
-    stroke: #fff;
+    fill: #f4f4f5;
+    stroke:  #f4f4f5;
+  }
+  .negro{
+    fill: #222;
+    stroke: #222;
   }
   .curveUpColor {
     margin-top: -100px;

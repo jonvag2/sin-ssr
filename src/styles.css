@@ -7,6 +7,9 @@
 @import './assets/css/animate/animate.min.css';
 @import './assets/css/style.css';
 @import './assets/css/colors/aqua.css';
+@import './assets/css/variables.css';
+
+
 
 @keyframes slide-out {
     to {
