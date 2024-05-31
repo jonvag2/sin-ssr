@@ -1,0 +1,151 @@
+.section{
+    padding-top: 75px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(
+        to right,
+        rgba(73, 104, 63, 0.84),
+        rgba(73, 104, 63, 0.769)
+       ), url(./../../../../../assets/talentoactivo/celebracion2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+    background-attachment: fixed;
+    /* filter: brightness(0.5); */
+}
+.h2{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+}
+.article1{
+    height: 20%;
+    width: 75%;
+    margin: 35px auto 10px auto;
+}
+.article2{
+    height: 80%;
+    width: 70%;
+    padding: 35px ;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+
+}
+.div1{
+    width: 30%;
+}
+.imgflecha{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    background-image: url(./../../../../../assets/talentoactivo/flecha.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+.h3{
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+}
+.p1{
+    color: white;
+    font-size: 20px;
+    line-height: 2.5rem;
+    font-weight: 700;
+
+}
+
+img{
+	height: 100vh;
+	max-width: 100%;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 400px) {
+    .div1{
+        width: 100%;
+    }
+    .h2{
+        font-size: 18px;
+        color: white;
+        font-weight: 700;
+    }
+    .article1{
+        height: 20%;
+        width: 75%;
+        margin:auto;
+    }
+    .imgflecha{
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        background-image: url(./../../../../../assets/talentoactivo/flecha.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+    }
+    .section{
+        height: 100%;
+    }
+
+    .div3{
+        width: 90%;
+        margin: auto;
+        text-align: justify;
+        line-height: 2rem;
+    }
+    .article2{
+        width: 100%;
+    }
+
+}
+@media only screen and (min-width: 400px) and (max-width: 768px){
+    .div1{
+        width: 30%;
+    }
+    .h2{
+        font-size: 18px;
+        color: white;
+        font-weight: 700;
+    }
+    .article1{
+        height: 20%;
+        width: 75%;
+        margin:auto;
+    }
+    .imgflecha{
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        background-image: url(./../../../../../assets/talentoactivo/flecha.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+    }
+    .section{
+        height: 100%;
+    }
+
+    .div3{
+        width: 90%;
+        margin: auto;
+        text-align: justify;
+        line-height: 2rem;
+    }
+    .article2{
+        width: 100%;
+    }
+}
+@media (min-width:769px) and (max-width: 1024px){
+    
+}

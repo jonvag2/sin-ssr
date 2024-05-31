@@ -9,6 +9,10 @@ import { NavComponent } from "../../shared/nav/nav.component";
 import { FooterComponent } from "../../shared/footer/footer.component";
 import { ConstruccionComponent } from '../../shared/construccion/construccion.component';
 import { MethodComponent } from "./components/method/method.component";
+import { OurPurposeComponent } from './components/our-purpose/our-purpose.component';
+import { MessageComponent } from './components/message/message.component';
+import { WhoAreWeComponent } from './components/who-are-we/who-are-we.component';
+import { UneteComponent } from './components/unete/unete.component';
 
 
 
@@ -21,8 +25,12 @@ import { MethodComponent } from "./components/method/method.component";
         HomeRoutingModule,
         SharedModule,
         OurserviceComponent,
+        OurPurposeComponent,
+        MessageComponent,
         HeaderComponent,
         NavComponent,
+        WhoAreWeComponent,
+        UneteComponent,
         FooterComponent,
         ConstruccionComponent,
         MethodComponent

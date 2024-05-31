@@ -8,7 +8,29 @@
 @import './assets/css/style.css';
 @import './assets/css/colors/aqua.css';
 @import './assets/css/variables.css';
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Jacquard+12&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
+
+/* variables color temas */
+:root {
+	--bg-primary: #f4f4f5;
+	--bg-secundary: #37502f;
+	--sub-bg-primary: yellow;
+	--sub-bg-secundary: #49683f;
+
+	--color-primary: yellow;
+	--color-secundary: yellow;
+}
+
+/* :root {
+	--bg-primary: #cecece;
+	--bg-secundary: #37502f;
+	--sub-bg-primary: yellow;
+	--sub-bg-secundary: #49683f;
+
+	--color-primary: yellow;
+	--color-secundary: yellow;
+} */
 
 
 @keyframes slide-out {
@@ -31,4 +53,20 @@
 ::view-transition-old(serie-slide){
     animation-duration: 500ms;
     animation-name: -ua-view-transition-fade-out, slide-out;
+}
+
+.font1{
+    color: white;
+	font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.bg-svg-white{
+    fill: var(--bg-primary);
+    stroke: var(--bg-primary);
+}
+.bg-svg-green{
+    fill: var(--bg-secundary);
+    stroke: var(--bg-secundary);
 }

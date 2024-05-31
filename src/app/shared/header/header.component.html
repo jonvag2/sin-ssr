@@ -1,25 +1,45 @@
-<main [style.view-transition-name]="'serie-slide'">
-    
-    <div class="contenedor" >
-        <article>
-        </article>
-        <div class="wrap" >
-            <div class="box" >
-                <span >Tu potencial, nuestro pasión...</span>
-                <h1 data-aos="zoom-in"
-                data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">En TALENTO ACTIVO </h1>
-                <div class="cajasubtitle">
-                    <p  class="subtitle1" data-aos="zoom-out-up" data-aos-duration="2500">Despertamos el potencial empresarial </p>
-                    <p  class="subtitle2" data-aos="zoom-out-up" data-aos-duration="3000"> en las PYMES!</p>
-                </div>
-
-                <div class="botones">
-                    <a href="#contact" class="btn1" data-aos="fade-right"
-                    data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">Contactanos</a>
-                    <a href="#" class="btn1" data-aos="fade-left"
-                    data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">Podcast</a>					
-                </div>
+<div style="margin: 0 0%;">
+    <ngx-slick-carousel class="carousel" 
+                        #slickModal="slick-carousel" 
+                        [config]="slideConfig" 
+                        (init)="slickInit($event)"
+                        (breakpoint)="breakpoint($event)"
+                        (afterChange)="afterChange($event)"
+                        (beforeChange)="beforeChange($event)">
+        @for (slide of slides; track slide.img) {
+            <div ngxSlickItem class="slide">
+                  <!-- <img src="{{ slide.img }}" alt="" width="100%"> -->
+                  <div class="contenedor" [ngStyle]="{'background-image': slide.img}">
+                    
+                    <article class="article0">
+                    </article>
+                    <article class="article1">
+                        <div class="box-title1 " data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
+                            <h3 class="texto1"> Tu potencial, nuestra pasión </h3>
+                        </div>
+                    </article>
+                    <article class="article2">
+                        <div class="logo-header"  data-aos="fade-up"
+                        data-aos-duration="3000">
+                            
+                        </div>
+                    </article>
+                    <article class="article3">
+                        <div class="box-title2" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="3000">
+                            <h3 class="texto2 font1">En TALENTO ACTIVO </h3>
+                        </div>
+                        <div class="box-title3" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="3000">
+                            <h3 class="texto3 font1">Despertamos el potencial empresarial en las PYMES</h3>
+                        </div>
+                    </article>
+                  </div>
             </div>
-        </div>
-    </div>
-</main>
+        }
+    </ngx-slick-carousel>
+    <!-- <button (click)="addSlide()">Add</button>
+    <button (click)="removeSlide()">Remove</button>
+    <button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
+    <button (click)="slickModal.unslick()">unslick</button> -->
+</div>

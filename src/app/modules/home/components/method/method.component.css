@@ -1,6 +1,6 @@
 
 .contenedor{
-    background-color: #f4f4f5;
+    background-color: var(--bg-primary);
     height: 100vh;
     max-width: 100%;
     display: flex;
@@ -50,20 +50,20 @@
 
 
 h1{
-    color: #37502f;
+    color: var(--bg-secundary);
     font-size: 45px;
     margin-left: 50px;
     background-color: transparent;
     font-family :'Times New Roman', Times, serif;
 }
 h2{
-    color: #37502f;
+    color: var(--bg-secundary);
     font-size: 22px;
     font-family :'Times New Roman', Times, serif;
 
 }
 h3{
-    color: #37502f;
+    color: var(--bg-secundary);
     font-size: 22px;
     font-family :'Times New Roman', Times, serif;
     background-color: transparent;
@@ -75,7 +75,7 @@ section{
 }
 
 p{
-    color: #37502f;
+    color: var(--bg-secundary);
     font-size: 16px;
     font-family :'Times New Roman', Times, serif;
     background-color: transparent;
@@ -84,7 +84,7 @@ p{
 }
 
 .contenerdor-title{
-    background-color: #f4f4f5;
+    background-color: var(--bg-primary);
 }
 
 

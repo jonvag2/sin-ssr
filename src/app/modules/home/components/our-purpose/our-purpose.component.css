@@ -1,0 +1,139 @@
+.section{
+    height: 78vh;
+    background-color: var(--bg-primary);
+    display: flex;
+    justify-content: center;
+
+}
+.article{
+    height: 90%;
+    width: 90%;
+    margin: auto;
+}
+.title{
+    margin: 15px 0 50px 0;
+}
+
+.content{
+    margin: 0 20px 0 20px;
+}
+
+.title-h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.title-h3{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.p1{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.bd-calloud{
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #d3d4d6;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+    border-left-color: #d9534f;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 360px) {
+    .section{
+        height: 100vh;
+        width: 100%;
+    }
+    .article{
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
+    .title{
+        margin: 15px 0 10px 0;
+    }
+    .title-h2{
+        font-size: 16px;
+        line-height: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    .title-h3{
+        font-size: 14px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .p1{
+        font-size: 12px;
+        line-height: 1.5rem;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+
+    .content{
+        margin: 0 0 0 0;
+    }
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px) { 
+    .article{
+        height: 100%;
+        width: 90%;
+        margin: auto;
+    }
+    .title{
+        margin: 15px 0 10px 0;
+    }
+    .title-h2{
+        font-size: 16px;
+        line-height: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    .title-h3{
+        font-size: 14px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .p1{
+        font-size: 12px;
+        line-height: 1.5rem;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+
+    .content{
+        margin: 0 0 0 0;
+    }
+}
+
+
+@media (min-width:769px) and (max-width: 1024px){
+    .section{
+        height: 100vh;
+        background-color: var(--bg-primary);
+        display: flex;
+        justify-content: center;
+    
+    }
+    .title{
+        margin: 15px 0 20px 0;
+    }
+    .title-h2{
+        font-size: 25px;
+        line-height: 3rem;
+        font-weight: 600;
+    }
+    .p1{
+        font-size: 16px;
+        line-height: 2rem;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+    
+}
