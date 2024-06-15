@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ConstruccionComponent } from './shared/construccion/construccion.component';
+import { FormComponent } from './shared/form/form.component';
 
 export const routes: Routes = [
   {
@@ -11,6 +12,10 @@ export const routes: Routes = [
   {
     path: "servicio",
     component: FooterComponent,
+  },
+  {
+    path: "form",
+    component: FormComponent,
   },
   /* ,
   {

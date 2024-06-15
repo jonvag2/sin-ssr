@@ -1,0 +1,103 @@
+<!-- 
+<section class="section-black">
+    <article class="title">
+        <h1 class="h1 text-shadow-drop-center">¿Estás <span class="color2">listo</span>?</h1>
+    </article>
+    <article class="container-mapa">
+        <div class="mapa">
+            <div class="foto heartbeat">
+
+            </div>
+        </div>
+        <div class="contador">
+            <div class="clock">
+                <div class="dia flex-centrado-item">
+                    <div class="numero numero-top">
+                        <h2 class="h2">{{time.days}}</h2>
+                    </div>
+                    <div class="letra">
+                        <h3 class="h3">Dias</h3>
+                    </div>
+                </div>
+                <div class="hora flex-centrado-item">
+                    <div class="numero numero-mid">
+                        <h2 class="h2">{{time.hours}}</h2>
+                    </div>
+                    <div class="letra">
+                        <h3 class="h3">Horas</h3>
+                    </div>
+
+                </div>
+                <div class="min flex-centrado-item">
+                    <div class="numero numero-bottom">
+                        <h2 class="h2">{{time.minutes}}</h2>
+                    </div>
+                    <div class="letra">
+                        <h3 class="h3">Minutos</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+</section> -->
+
+<div class="cuerpo">
+    @if (this.loaderblock) {
+        <div class="container-loader">
+            <div class="loader"></div>
+        </div>
+    }
+
+    <section class="section-form">
+        
+        <article class="dinamico">
+            <app-text-slider></app-text-slider>
+        </article>
+
+        <article class="container flex-centrado-content ">
+            <div class="title-form flex-centrado-item">
+                <p class="p">Aprende a comprar
+                    vehículos de subasta en USA con nosotros, 
+                    venderlos y exportarlos a tu País
+                </p>
+            </div>
+            <div class="container-form">
+                <form #formulario="ngForm" (ngSubmit)="guardarDatosPerfil()" class="form">
+                    <div class="group-input">
+                        <label for="nombre" class="label">Nombre</label>
+                        <input type="text" autocomplete="off" class="input" name="nombre" placeholder="Nombre" id="nombre" [(ngModel)]="perfil.nombre" #nombre="ngModel" required minlength="3">
+                        <p *ngIf="nombre.invalid && nombre.touched">Ingrese un nombre valido</p>
+                    </div>
+                    <div class="group-input">
+                        <label for="email"  class="label">Email</label>
+                        <input type="email" autocomplete="off" class="input" placeholder="example@email.com" name="email" id="email" [(ngModel)]="perfil.email" #email="ngModel" required>
+                        <p *ngIf="email.invalid && email.touched">Ingrese una email valida</p>
+                    </div>
+                    <div class="footer-form">
+                        @if (this.buttonblock) {
+
+                            <button class="button" [disabled]="formulario.invalid" >Enviar</button>
+                        }
+                        @if (!this.buttonblock) {
+
+                            <div class=" button-disable" >Enviado!</div>
+                        }
+                        <div class="banderas">
+                            <div class="foto-bandera" style="background-image: linear-gradient(to right,rgba(121, 112, 112, 0),rgba(0, 0, 0, 0)), url(./../../../assets/talentoactivo/banderas/ve.png);"></div>
+                            <div class="foto-bandera" style="background-image: linear-gradient(to right,rgba(121, 112, 112, 0),rgba(0, 0, 0, 0)), url(./../../../assets/talentoactivo/banderas/us.png);"></div>
+                            <div class="foto-bandera" style="background-image: linear-gradient(to right,rgba(121, 112, 112, 0),rgba(0, 0, 0, 0)), url(./../../../assets/talentoactivo/banderas/do.png);"></div>
+                            <div class="foto-bandera" style="background-image: linear-gradient(to right,rgba(121, 112, 112, 0),rgba(0, 0, 0, 0)), url(./../../../assets/talentoactivo/banderas/mx.png);"></div>
+                        </div>
+                    </div>
+                </form>
+            </div> 
+            <div class="contenedor-logo">
+
+                <div class="container-logo">
+                </div>
+            </div>
+
+        </article>
+    </section>
+</div>

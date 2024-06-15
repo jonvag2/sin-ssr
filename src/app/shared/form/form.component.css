@@ -1,0 +1,714 @@
+/* HTML: <div class="loader"></div> */
+.container-loader{
+    position: absolute;
+    background-color: #2e05468c;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.loader {
+    --c1:#412f20;
+    --c2:#f8b13b;
+    width: 40px;
+    height: 80px;
+    position: absolute;
+    border-top: 4px solid var(--c1);
+    border-bottom: 4px solid var(--c1);
+    background: linear-gradient(90deg, var(--c1) 2px, var(--c2) 0 5px,var(--c1) 0) 50%/7px 8px no-repeat;
+    display: grid;
+    overflow: hidden;
+    animation: l5-0 2s infinite linear;
+  }
+  .loader::before,
+  .loader::after {
+    content: "";
+    grid-area: 1/1;
+    width: 75%;
+    height: calc(50% - 4px);
+    margin: 0 auto;
+    border: 2px solid var(--c1);
+    border-top: 0;
+    box-sizing: content-box;
+    border-radius: 0 0 40% 40%;
+    -webkit-mask: 
+      linear-gradient(#000 0 0) bottom/4px 2px no-repeat,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: destination-out;
+            mask-composite: exclude;
+    background: 
+      linear-gradient(var(--d,0deg),var(--c2) 50%,#0000 0) bottom /100% 205%,
+      linear-gradient(var(--c2) 0 0) center/0 100%;
+    background-repeat: no-repeat;
+    animation: inherit;
+    animation-name: l5-1;
+  }
+  .loader::after {
+    transform-origin: 50% calc(100% + 2px);
+    transform: scaleY(-1);
+    --s:3px;
+    --d:180deg;
+  }
+  @keyframes l5-0 {
+    80%  {transform: rotate(0)}
+    100% {transform: rotate(0.5turn)}
+  }
+  @keyframes l5-1 {
+    10%,70%  {background-size:100% 205%,var(--s,0) 100%}
+    70%,100% {background-position: top,center}
+  }
+
+
+  .cuerpo{
+    height: 115vh;
+  }
+
+.heartbeat {
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+ @-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  
+  
+  .text-shadow-drop-center {
+	-webkit-animation: text-shadow-drop-center 0.6s infinite alternate-reverse both;
+	        animation: text-shadow-drop-center 0.6s infinite alternate-reverse both;
+}
+
+ @-webkit-keyframes text-shadow-drop-center {
+    0% {
+      text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      text-shadow: 0 0 18px #9340ff54;
+    }
+  }
+  @keyframes text-shadow-drop-center {
+    0% {
+      text-shadow: 0 0 0 rgba(133, 133, 133, 0.774);
+    }
+    100% {
+      text-shadow: 0 0 18px #9340ff7e;
+    }
+  }
+  
+
+
+.section-black{
+    background-color: #262626;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.h1{
+    color: white;
+    font-size: 75px;
+    font-weight: 900;
+}
+
+.title{
+    width: 60%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+}
+
+.container-mapa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 90%;
+    width: 50%;
+    margin: 0px auto 0 auto;
+}
+.foto{
+    height: 370px;
+    width: 370px;
+    margin: 0 auto 0 auto;
+    background-image: linear-gradient(to right,rgba(121, 112, 112, 0),rgba(0, 0, 0, 0)), url(./../../../assets/talentoactivo-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.mapa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    margin: auto;
+}
+
+.contador{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.clock{
+    height: 50%;
+    width: 50%;
+}
+.h2{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.dia{
+    height: 33.3%;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.hora{
+    height: 33.3%;
+    justify-content: space-between;
+
+    width: 100%;
+}
+.min{
+    height: 33.3%;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.numero{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.numero-top{
+    border: solid white 3px;
+
+    border-radius: 15px 15px 0 0;
+    background: rgb(1,104,51);
+    background: linear-gradient(0deg, rgba(1,104,51,1) 0%, rgba(57,168,53,1) 100%);
+}
+.numero-mid{
+    border: solid white 3px;
+}
+.numero-bottom{
+    border: solid white 3px;
+    border-radius: 0 0 15px 15px ;
+}
+.h2{
+    text-align: center;
+}
+.letra{
+    width: 60%;
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.container-form{
+    margin-top: 50px;
+    margin: 50px auto 0 auto;
+  width: 40%;
+  border-radius: 20px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+
+.color2{
+    color: #009fe3;
+}
+
+
+/* title-form */
+.container{
+    width: 80%;
+    margin: auto;
+}
+.section-form{
+    background-color: #ecf0f3;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.title-form{
+    margin:  15px auto 0 auto;
+    width: 90%;
+    padding: 0px 120px;
+    flex-wrap: wrap ;
+}
+.p{
+    font-size: 25px;
+    color: rgb(139, 139, 139);
+    line-height: 2.5rem;
+    font-weight: 600;
+}
+
+.container{
+    flex-wrap: wrap;
+}
+
+.group-input{
+    display: flex;
+    flex-wrap: wrap;
+}
+.input{
+    width: 100%;
+
+}
+
+
+.label, .input, .button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  }
+  .label{
+    width: 30%;
+    margin-left: 10px;
+    margin-top: 25px;
+    text-align: left;
+    color: #262626;
+    font-size: small;
+}
+
+  label {
+    margin-bottom: 4px;
+  }
+  
+  .label:nth-of-type(2) {
+    margin-top: 12px;
+  }
+  
+  .input::placeholder {
+    color: gray;
+  }
+  
+  .input {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  }
+  
+  .button {
+    color: white;
+    margin-top: 20px;
+    background: #1DA1F2;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+    width: 30%;
+  }
+  .button-disable{
+    background: #5bb4eb62;
+    cursor: not-allowed;
+    color: white;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .button:hover {
+    box-shadow: none;
+    background: #0d4364;
+    scale: 1.1;
+
+  }
+  .banderas{
+    width: 40%;
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+  }
+  .footer-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  .foto-bandera{
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+    }
+    .foto-bandera:hover{
+        scale: 1.07 ;
+    }
+    .contenedor-logo{
+        margin-top: 35px;
+        width: 100%;
+    }
+
+    .container-logo{
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        background-image: linear-gradient(to right,rgba(121, 112, 112, 0),rgba(0, 0, 0, 0)), url(./../../../assets/talentoactivo/talentoactivo-logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+      }
+
+
+    @media only screen and (min-width: 100px) and (max-width: 451px) {
+        .section-black{
+            height: 50vh;
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+
+        .h1{
+            color: white;
+            font-size: 35px;
+            font-weight: 900;
+        }
+        
+        .title{
+            width: 60%;
+            height: 10%;
+        }
+
+        .container-mapa{
+            justify-content: center;
+            height: 30vh;
+            
+            width: 90%;
+        }
+
+        .foto{
+            height: 160px;
+            width: 160px;
+            margin: auto;
+            background-image: linear-gradient(to right,rgba(121, 112, 112, 0),rgba(0, 0, 0, 0)), url(./../../../assets/talentoactivo/distribucion_1.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+        }
+        
+        .mapa{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 45%;
+            margin: auto;
+        }
+        
+        .contador{
+            width: 45%;
+            display: flex;
+            height: 30vh;
+
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .clock{
+            height: 130px;
+            margin-top: 20px;
+            width: 70%;
+        }
+
+        .h3{
+            font-size: 15px ;
+        }
+        .h2{
+            font-size: 15px ;
+        }
+        .letra{
+            width: 30%;
+            text-align: left;
+            color: white;
+            font-size: 16px;
+            font-weight: 800;
+        }
+
+        .numero{
+            margin-left: 25px;
+        }
+        /* title form  */
+        .section-form{
+            height: 100%;
+            padding-top: 10px;
+            padding-bottom: 1px;
+        }
+        
+        .container{
+            width: 100%;
+            gap: 25px;
+            margin-bottom:20px;
+        }
+        
+        .title-form{
+            width: 80%;
+            padding: 0 ;
+        }
+        .container-form{
+            margin-top: 0px;
+            width: 60%;
+
+            padding: 10px 15px;
+            box-sizing: border-box;
+            background: #ecf0f3;
+            box-shadow: 10px 10px 18px #cbced1, -12px -12px 12px white;
+        }
+        .p{
+            font-size: 20px;
+            text-align: center;
+            line-height: 1.8rem;
+        }
+        .footer-form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+        .button{
+            width: 70%;
+        }
+        .banderas{
+            width: 100%;
+            height: 40px;
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 0px;
+          }
+          .contenedor-logo{
+            margin-top: 0px;
+            width: 100%;
+        }
+
+          .container-logo{
+            height: 130px;
+            width: 130px;
+            margin: auto;
+            background-image: linear-gradient(to right,rgba(121, 112, 112, 0),rgba(0, 0, 0, 0)), url(./../../../assets/talentoactivo/obreros_1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+          }
+
+
+    }
+
+    @media only screen and (min-width: 452px) and (max-width: 900px){
+        .section-black{
+            background-color: #262626;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .h1{
+            color: white;
+            font-size: 45px;
+            font-weight: 900;
+        }
+        
+        .title{
+            width: 60%;
+            height: 20%;
+        }
+
+        .container-mapa{
+            justify-content: center;
+            height: 70vh;
+            width: 90%;
+        }
+
+        .foto{
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            background-image: linear-gradient(to right,rgba(121, 112, 112, 0),rgba(0, 0, 0, 0)), url(./../../../assets/talentoactivo-1.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+        }
+        
+        .mapa{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 45%;
+            margin: auto;
+        }
+        
+        .contador{
+            width: 45%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .clock{
+            height: 50%;
+            width: 70%;
+        }
+
+        .h3{
+            font-size: 20px ;
+        }
+        .letra{
+            width: 50%;
+            text-align: left;
+            color: white;
+            font-size: 16px;
+            font-weight: 800;
+        }
+
+        /* title form  */
+        .section-form{
+            height: 70vh;
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+        .container{
+            height: 100%;
+        }
+        .title-form{
+            width: 80%;
+            padding: 0 ;
+        }
+        .p{
+            font-size: 16px;
+            line-height: 1.8rem;
+        }
+        .container-form{
+            margin-top: 0px;
+          width: 80%;
+}
+        .footer-form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+        .banderas{
+            width: 50%;
+            height: 40px;
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 40px;
+          }
+    }
+    
+    @media (min-width:900px) and (max-width: 1024px){
+
+    }
+
+
+
+
+
