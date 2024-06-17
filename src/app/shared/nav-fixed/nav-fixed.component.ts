@@ -1,30 +1,25 @@
 import { NgClass } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
-import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-nav',
+  selector: 'app-nav-fixed',
   standalone: true,
-  imports: [RouterModule, NgClass],
-  templateUrl: './nav.component.html',
-  styleUrl: './nav.component.css'
+  imports: [NgClass],
+  templateUrl:'./nav-fixed.component.html',
+  styleUrl: './nav-fixed.component.css'
 })
-export class NavComponent {
-
-  constructor(){
-  }
-
-  activarScroll:boolean = false;
+export class NavFixedComponent {
+  navbarhidden:boolean = false
 
   @HostListener("window:scroll", ['$event'])
   doSomethingOnGlobalScroll($event: Event) {
     let scrollOffset = window.scrollY;
     if (scrollOffset > 100) {
       console.log("soy menor a cieen ")
-      this.activarScroll = true;
+      this.navbarhidden = true;
 
     } else {
-      this.activarScroll = false;
+      this.navbarhidden = false;
 
     }
   }
