@@ -13,11 +13,11 @@ export class FormService {
   constructor(private http: HttpClient) { }
 
   guardarDatos(usuario:Usuario) {
-    return this.http.post(`${this.apiUrl}/talento/usuarios`, usuario)
+    return this.http.post(`${this.apiUrl}/api/usuarios`, usuario)
       
   }
   obtenerDatos() {
-    this.http.get(`${this.apiUrl}/talento/usuarios`)
+    this.http.get(`${this.apiUrl}/api/usuarios`)
       .subscribe(response => {
         console.log(response);
       });

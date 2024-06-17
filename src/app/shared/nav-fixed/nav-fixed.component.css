@@ -1,0 +1,34 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(40, 26, 231, 0.384); /* Transparente al principio */
+  transition: background-color 0.5s; /* Transición para cambiar el color de fondo */
+  z-index: 1;
+}
+
+.nav.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); /* Color de fondo opaco al hacer scroll */
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #ccc;
+}

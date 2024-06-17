@@ -1,14 +1,12 @@
 nav{
     background-color: rgba(0, 0, 0, 0);
-    position: absolute;
-    z-index: 1;
+    position: fixed;
+    z-index: 2;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.048);
-
 }
-header{
-    background-color: red;
-    width: 100%;
+
+.oscurecer{
+    background-color: rgba(0, 0, 0, 0.368);
 }
 
 nav:hover{
