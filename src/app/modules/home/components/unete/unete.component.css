@@ -7,8 +7,8 @@
 	height: 100vh;
 	background-image: linear-gradient(
         to right,
-        rgba(73, 104, 63, 0.84),
-        rgba(73, 104, 63, 0.769)
+        #606060,
+        #2cb72ab6
        ), url(./../../../../../assets/talentoactivo/celebracion2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -43,7 +43,7 @@
 .imgflecha{
     display: flex;
     justify-content: center;
-    height: 80px;
+    height: 85px;
     background-image: url(./../../../../../assets/talentoactivo/flecha.png);
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -51,14 +51,14 @@
 }
 .h3{
     color: white;
-    font-size: 24px;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: 700;
 }
 .p1{
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 2.5rem;
-    font-weight: 700;
+    font-weight: 600;
 
 }
 
@@ -74,11 +74,15 @@ img{
 @media only screen and (min-width: 100px) and (max-width: 400px) {
     .div1{
         width: 100%;
+
     }
     .h2{
         font-size: 18px;
         color: white;
         font-weight: 700;
+    }
+    .article2{
+        padding: 40px ;
     }
     .article1{
         height: 20%;
@@ -88,7 +92,7 @@ img{
     .imgflecha{
         display: flex;
         justify-content: center;
-        height: 50px;
+        height: 55px;
         background-image: url(./../../../../../assets/talentoactivo/flecha.png);
         background-repeat: no-repeat;
         background-size: contain;
@@ -100,7 +104,7 @@ img{
 
     .div3{
         width: 90%;
-        margin: auto;
+        margin: 15px auto 20px 0;
         text-align: justify;
         line-height: 2rem;
     }
@@ -126,7 +130,7 @@ img{
     .imgflecha{
         display: flex;
         justify-content: center;
-        height: 50px;
+        height: 70px;
         background-image: url(./../../../../../assets/talentoactivo/flecha.png);
         background-repeat: no-repeat;
         background-size: contain;
@@ -144,6 +148,12 @@ img{
     }
     .article2{
         width: 100%;
+    }
+
+    .p1{
+        font-size: 10px;
+        line-height: 2.0rem;
+        font-weight: 500;
     }
 }
 @media (min-width:769px) and (max-width: 1024px){

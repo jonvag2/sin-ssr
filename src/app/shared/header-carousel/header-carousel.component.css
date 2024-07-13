@@ -1,0 +1,223 @@
+.scale-down-center {
+	-webkit-animation: scale-down-center 2.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse 4s both;
+	        animation: scale-down-center 2.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse 4s both;
+}
+
+ @-webkit-keyframes scale-down-center {
+    0% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  @keyframes scale-down-center {
+    0% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  
+
+
+
+.tracking-in-expand-fwd {
+	-webkit-animation: tracking-in-expand-fwd 2.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand-fwd 2.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+ @-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-in-bottom {
+	-webkit-animation: slide-in-bottom 3.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 3.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+.element-slide{
+    @apply h-[95vh] flex  justify-center items-center bg-purple-950 text-white font-semibold;
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    align-content: flex-end;
+}
+
+.btn-swiper{
+    @apply text-gray-100 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2;
+}
+
+.logo-container, .slogan-container{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.slogan-pie{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: flex-end;
+}
+
+.slogan{
+    margin: auto;
+    width: 90%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.sub-slogan{
+    width: 65%;
+    margin-bottom: 65px;
+    margin-left: 50px;
+}
+.box-title2{
+    width: 80%;
+	margin: 0 0 30px auto;
+	padding-left: 50px;
+	background-color: rgba(240, 248, 255,  0.185);
+
+}
+.box-title3{
+	width: 96%;
+	margin: 0 0 0 auto;
+	padding-left: 50px;
+	background-color: rgba(240, 248, 255, 0.185);
+    line-height: 1.5rem;
+}
+
+.logo{
+	width: 80%;
+	height: 80%;
+    margin-bottom: 20px;
+	background-image: url(./../../../assets/talentoactivo/logo_png_talento_activo/logoblancovertical.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	opacity: 0.9;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    .element-slide{
+        @apply h-[85vh] ;
+
+    }
+    .logo-container, .slogan-container{
+        width: 48%;
+        height: 55%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .slogan-pie{
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-end;
+        margin-bottom: 50px;
+    }
+    .slogan{
+        margin-bottom: 80px;
+    }
+    .sub-slogan{
+        width: 95%;
+        margin-right: 16px;
+    }
+    .box-title2{
+        width: 80%;
+        margin: 0 0 30px auto;
+        padding-left: 10px;
+        background-color: rgba(240, 248, 255,  0.185);
+        line-height: 2.5rem;
+
+    }
+    .box-title3{
+        width: 96%;
+        margin: 0 0 0 auto;
+        padding-left: 0px;
+        background-color: rgba(240, 248, 255, 0.185);
+        line-height: 2.5rem;
+    }
+}
+@media (min-width:769px) and (max-width: 1024px){
+
+}
+
+
+

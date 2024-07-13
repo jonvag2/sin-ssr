@@ -1,7 +1,7 @@
 
 .contenedor{
     background-color: var(--bg-secundary);
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,6 @@
 }
 h1{
     color: white;
-    font-size: 45px;
     margin-bottom: 60px;
     margin-top: -30px;
     margin-left: 20px;
@@ -22,16 +21,17 @@ h1{
 }
 h2{
     color: white;
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: 700;
     font-family :'Times New Roman', Times, serif;
+    margin-bottom: 10px;
 
 }
 
 p{
     color: white;
-    font-size: 16px;
-    font-family :'Times New Roman', Times, serif;
-
+    font-size: 18px;
+    line-height: 2.5rem;
 }
 
 .contenerdor-title{
@@ -86,7 +86,7 @@ p{
     }
     
     .box{
-        padding: 5px 15px;
+        padding: 20px 15px;
         width: 90%;
     }
 }
@@ -106,20 +106,23 @@ p{
         text-align: center;
     }
     h2{
-        font-size: 19px;
+        font-size: 16px;
+        margin-bottom: 15px;
     }
     
     p{
-        font-size: 15px;
-        line-height: 1.4;
+        margin: auto;
+        font-size: 14px;
+        line-height: 2.4rem;
+        font-weight: 500;
     }
     .contenerdor-boxes{
-        gap: 5px;
+        gap: 10px;
         justify-content: center;
     }
     
     .box{
-        padding: 5px 10px;
+        padding: 20px 10px;
         text-align: center;
     }
 }
@@ -129,7 +132,7 @@ p{
         width: 80%;
     }
     .box:hover{
-        background-color: #49683f5d;
+        /* background-color: #49683f5d; */
         transform: scale(1.02);
     }
 

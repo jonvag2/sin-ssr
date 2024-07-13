@@ -79,6 +79,7 @@
     }
 
   }
+  
 
 
   .curveUpColor, .curveDownColor {
@@ -111,3 +112,71 @@
   .shadow-nosotros:hover{
     transform: scale(1.02);
 	}
+
+  .bg-talento{
+    background-color:  var(--bg-secundary);
+  }
+
+  .container-nosotros{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+  }
+  .texto-nosotros{
+    width: 68%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+  }
+  .imagen-nosotros{
+    height: 100%;
+    width: 28%;
+    background-image: linear-gradient(to right, rgb(42 47 41 / 26%), rgb(0 0 0 / 36%)), url(../../../assets/talentoactivo/personal/adaluz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .container-h2-nosotros{
+    width: 50%;
+    margin-left: 60px;
+
+  }
+  .container-p-nosotros{
+    width: 80%;
+    margin: auto;
+  }
+
+  .conoceme{
+    background-color: var(--sub-bg-secundary);  
+    width: 100%;
+    height: 85vh;
+  }
+  @media (max-width:760px)  { /* smartphones, iPhone, portrait 480x320 phones */
+  .container-nosotros{
+    justify-content: space-between;
+  }
+  .imagen-nosotros{
+    width: 40%;
+  }
+  .texto-nosotros{
+    width: 59%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .container-h2-nosotros{
+    width: 80%;
+    margin-left: 0px;
+    margin: auto;
+    text-align: center;
+  }
+  .container-p-nosotros{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+
+  }

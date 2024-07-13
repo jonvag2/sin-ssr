@@ -20,12 +20,9 @@ export class NavComponent {
   doSomethingOnGlobalScroll($event: Event) {
     let scrollOffset = window.scrollY;
     if (scrollOffset > 100) {
-      console.log("soy menor a cieen ")
       this.activarScroll = true;
-
     } else {
       this.activarScroll = false;
-
     }
   }
 
