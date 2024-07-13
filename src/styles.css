@@ -14,7 +14,19 @@
 @tailwind components;
 @tailwind utilities;
 /* variables color temas */
+
+/* tema modificado adaluz */
 :root {
+	--bg-primary: #f4f4f5;
+	--bg-secundary: #2DB72A;
+	--sub-bg-primary: yellow;
+	--sub-bg-secundary: #606060ec;
+
+	--color-primary: yellow;
+	--color-secundary: yellow;
+}
+
+/* :root {
 	--bg-primary: #f4f4f5;
 	--bg-secundary: #37502f;
 	--sub-bg-primary: yellow;
@@ -22,18 +34,7 @@
 
 	--color-primary: yellow;
 	--color-secundary: yellow;
-}
-
-/* :root {
-	--bg-primary: #cecece;
-	--bg-secundary: #37502f;
-	--sub-bg-primary: yellow;
-	--sub-bg-secundary: #49683f;
-
-	--color-primary: yellow;
-	--color-secundary: yellow;
 } */
-
 
 @keyframes slide-out {
     to {
@@ -59,7 +60,7 @@
 
 .font1{
     color: white;
-	font-family: "Libre Baskerville", serif;
+	  font-family: "Libre Baskerville", serif;
     font-weight: 700;
     font-style: normal;
 }

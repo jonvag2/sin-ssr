@@ -13,6 +13,7 @@ import { OurPurposeComponent } from './components/our-purpose/our-purpose.compon
 import { MessageComponent } from './components/message/message.component';
 import { WhoAreWeComponent } from './components/who-are-we/who-are-we.component';
 import { UneteComponent } from './components/unete/unete.component';
+import { HeaderCarouselComponent } from '../../shared/header-carousel/header-carousel.component';
 
 
 
@@ -28,6 +29,7 @@ import { UneteComponent } from './components/unete/unete.component';
         OurPurposeComponent,
         MessageComponent,
         HeaderComponent,
+        HeaderCarouselComponent,
         NavComponent,
         WhoAreWeComponent,
         UneteComponent,
