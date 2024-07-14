@@ -8,6 +8,7 @@
 @import './assets/css/style.css';
 @import './assets/css/colors/aqua.css';
 @import './assets/css/variables.css';
+@import './assets/css/panton/panton.css';
 @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Jacquard+12&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 @tailwind base;
@@ -36,6 +37,8 @@
 	--color-secundary: yellow;
 } */
 
+
+
 @keyframes slide-out {
     to {
     transform: translate(1200px);    
@@ -59,10 +62,8 @@
 }
 
 .font1{
-    color: white;
-	  font-family: "Libre Baskerville", serif;
+    color: rgba(255, 255, 255, 0.886);
     font-weight: 700;
-    font-style: normal;
 }
 
 .bg-svg-white{
