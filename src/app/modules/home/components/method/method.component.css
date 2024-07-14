@@ -49,22 +49,19 @@
 
 
 h1{
-    color: var(--bg-secundary);
+    font-weight: 500;
     font-size: 45px;
     margin-left: 50px;
     background-color: transparent;
-    font-family :'Times New Roman', Times, serif;
 }
 h2{
-    color: var(--bg-secundary);
+    font-weight: 500;
     font-size: 22px;
-    font-family :'Times New Roman', Times, serif;
 
 }
 h3{
-    color: var(--bg-secundary);
+    font-weight: 500;
     font-size: 22px;
-    font-family :'Times New Roman', Times, serif;
     background-color: transparent;
     text-align: center;
 }
@@ -74,9 +71,8 @@ section{
 }
 
 p{
-    color: var(--bg-secundary);
+    font-weight: 500;
     font-size: 16px;
-    font-family :'Times New Roman', Times, serif;
     background-color: transparent;
     text-align: center;
 

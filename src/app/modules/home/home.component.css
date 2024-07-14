@@ -122,14 +122,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-
   }
   .texto-nosotros{
     width: 68%;
+    height: 85%;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-
   }
   .imagen-nosotros{
     height: 100%;
