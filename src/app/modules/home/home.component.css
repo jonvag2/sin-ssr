@@ -3,6 +3,10 @@
   width: 1200px;
   height: 500px;
 }
+
+.margin-negativo{
+  margin-top: -0.8px;
+}
 .card{
   width: 80wv;
   padding: 30px;

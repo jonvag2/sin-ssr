@@ -35,6 +35,7 @@ p{
 
 .contenerdor-title{
     background-color: var(--bg-secundary);
+    border: solid red;
 }
 
 .contenerdor-boxes{
@@ -59,7 +60,7 @@ p{
 
 @media only screen and (min-width: 100px) and (max-width: 360px) {
     .contenedor{
-        height: 90vh;
+        height: 120vh;
     }
     .clase-1{
         width: 99%;
@@ -88,11 +89,17 @@ p{
         padding: 20px 15px;
         width: 90%;
     }
+
+    .contenerdor-title{
+        background-color: var(--bg-secundary);
+        border: solid blue;
+    }
 }
 
 @media only screen and (min-width: 360px) and (max-width: 768px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
     .contenedor{
-        height: 90vh;
+        height: auto;
+        padding-bottom: 20px;
     }
 	
     .clase-1{
@@ -124,6 +131,24 @@ p{
         padding: 20px 10px;
         text-align: center;
     }
+    .contenerdor-title{
+        background-color: var(--bg-secundary);
+        margin-top: 30px;
+        border: solid yellow;
+    }
+
+    .description{
+        line-height: 2rem;
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .title{
+        font-size: 18px;
+        font-weight: bold;
+
+    }
 }
 @media (min-width:769px){
 	
@@ -134,6 +159,10 @@ p{
         /* background-color: #49683f5d; */
         transform: scale(1.02);
     }
+    .contenerdor-title{
+        background-color: var(--bg-secundary);
+        border: solid green;
+    }
 
 }
 
@@ -143,7 +172,6 @@ p{
 .clase-2{
     background-color: black;
     height: 90vh;
-    border: solid yellow;
     width: 95%;
     margin: auto;
 }
