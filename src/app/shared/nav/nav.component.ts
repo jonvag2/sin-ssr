@@ -15,6 +15,17 @@ export class NavComponent {
   }
 
   activarScroll:boolean = false;
+  menuResponsive:boolean = true;
+
+  ngOnInit():void{
+    this.menuResponsive = true;
+
+  }
+
+  clickMenu():void{
+    this.menuResponsive=!this.menuResponsive;
+    console.log("estoy en click menu this.menuResponsive:", this.menuResponsive);
+  }
 
   @HostListener("window:scroll", ['$event'])
   doSomethingOnGlobalScroll($event: Event) {

@@ -1,32 +1,30 @@
-	<nav class="navbar navbar-default navbar-onepage" [ngClass]="{oscurecer:activarScroll}">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-					data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<div class="box-title">
-					<div class="custom-icon">
-						<a  routerLink="/inicio" routerLinkActive><img src="../../../assets/talentoactivo/talentoactivo-logo-pequeno.png" alt="talentoactivo-logo"
-						></a>
-					</div>
-					<div class="navbar-brand title-logo">
-						<a  routerLink="/inicio" routerLinkActive><p class="talento single-day-regular ">Talento Activo</p></a>
-					</div>
+<nav class="navbar navbar-default navbar-onepage mt-0" [ngClass]="{oscurecer:activarScroll}">
+	<div class="contenido-nav">
+		<div class="navbar-header sm:ml-1 md:ml-16 lg:ml-20 pt-6 sm:mt-0 ">
+			<button type="button" class="navbar-toggle collapsed " (click)="clickMenu()">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="box-title">
+				<div class="custom-icon">
+					<a  routerLink="/inicio" routerLinkActive><img src="../../../assets/talentoactivo/talentoactivo-logo-pequeno.png" alt="talentoactivo-logo"
+					></a>
+				</div>
+				<div class="navbar-brand title-logo">
+					<a  routerLink="/inicio" routerLinkActive><p class="talento single-day-regular ">Talento Activo</p></a>
 				</div>
 			</div>
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<!-- <div class="" id="bs-example-navbar-collapse-1"> -->
-				<ul class="nav navbar-nav navbar-right">
-					<li class="talento" ><a routerLink="/inicio/services" routerLinkActive>services</a></li>
-					<li class="talento"><a routerLink="/inicio/services" routerLinkActive>products</a></li>
-					<li class="talento"><a routerLink="/inicio/services" routerLinkActive>team</a></li>
-					<li class="talento"><a routerLink="/inicio/services" routerLinkActive>Pricing</a></li>
-					<li class="talento"><a routerLink="/inicio/services" routerLinkActive>Contact</a></li>
-				</ul>
-			</div>
 		</div>
-	</nav>
+		<div class="esto lg:mr-24 sm:m-auto md:mt-0 bg-[#606060f8] xl:bg-transparent pr-1 md:pr-14"  [ngClass]="{esconder:menuResponsive}" >
+			<ul class="nav navbar-nav navbar-right mt-6 menu-centrado">
+				<li class="talento text-center sm:text-xl md:text-4xl" ><a routerLink="/inicio/services" routerLinkActive>services</a></li>
+				<li class="talento text-center sm:text-xl md:text-4xl"><a routerLink="/inicio/services" routerLinkActive>products</a></li>
+				<li class="talento text-center sm:text-xl md:text-4xl"><a routerLink="/inicio/services" routerLinkActive>team</a></li>
+				<li class="talento text-center sm:text-xl md:text-4xl"><a routerLink="/inicio/services" routerLinkActive>Pricing</a></li>
+				<li class="talento text-center sm:text-xl md:text-4xl"><a routerLink="/inicio/services" routerLinkActive>Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
