@@ -1,0 +1,32 @@
+
+@font-face {
+  font-family: 'font-panton-bold';
+  src: url('../../talentoactivo/tipografia/panton/Panton-BlackCaps.otf') format('truetype');
+}
+.font-panton-bold {
+  font-family: font-panton-bold, Arial, sans-serif;
+}
+
+@font-face {
+  font-family: 'font-panton-bold-italic';
+  src: url('../../talentoactivo/tipografia/panton/Panton-BlackitalicCaps.otf') format('truetype');
+}
+.font-panton-bold-italic {
+  font-family: font-panton-bold-italic, Arial, sans-serif;
+}
+
+@font-face {
+  font-family: 'font-panton-light';
+  src: url('../../talentoactivo/tipografia/panton/Panton-LightCaps.otf') format('truetype');
+}
+.font-panton-light {
+  font-family: font-panton-light, Arial, sans-serif;
+}
+
+@font-face {
+  font-family: 'font-panton-light-italic';
+  src: url('../../talentoactivo/tipografia/panton/Panton-LightitalicCaps.otf') format('truetype');
+}
+.font-panton-light-italic {
+  font-family: font-panton-light-italic, Arial, sans-serif;
+}
