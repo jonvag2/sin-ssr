@@ -14,14 +14,10 @@ nav{
 nav:hover{
     background-color: rgba(0, 0, 0, 0.368);
 }
-.single-day-regular {
-    font-family: "PT Sans Narrow", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
 
 .custom-icon{
     margin-right: 8px;
+    filter: drop-shadow(1px 1px 2px #252525d0);
 }
 
 .box-title{
@@ -35,14 +31,11 @@ nav:hover{
 }
 .talento{
     text-transform: none;
-
 }
 
-.custom-icon:hover{
+/* .custom-icon:hover{
     transform: scale(1.1);
-    /* box-shadow: 5px 5px 5px #2ecc71; */
-    filter: drop-shadow(2px 2px 2px #2DB72A);
-}
+} */
 
 
 
@@ -62,7 +55,7 @@ nav:hover{
     .talento:hover{
         /* font-size: 18px; */
         color: #606060;
-        filter: drop-shadow(1px 1px 1px #606060);
+        filter: drop-shadow(1px 1px 1px #252525d0);
     
     }
     .title-logo{

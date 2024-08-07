@@ -39,6 +39,10 @@
     text-decoration: none;
   }
 }
+ul{
+  list-style-type: disc;
+  color: white;
+}
 
 .card2{
   width: 80wv;
@@ -65,7 +69,6 @@
   display: inline;
   transition: .9s ease-in-out;
   font-family: raleway, arial, sans-serif;
-  text-transform: uppercase;
   
   a{
     color: white;
@@ -180,7 +183,7 @@
     .container-p-nosotros{
       width: 90%;
       margin: auto;
-      text-align: center;
+
     }
   }
   @media only screen and (min-width: 401px) and (max-width: 768px) {

@@ -183,15 +183,24 @@ label
 .image-v3
 {
 	background: url(../img/background_v3.jpg) center center no-repeat;
+	
 	-moz-background-size: cover;
 	background-size: cover}
 
 
 .image-v4
 {
-	background: url(../img/background_v4.jpg) center center no-repeat;
+	background-image: linear-gradient(
+	to right,
+	#606060a9,
+	#2cb72a6c
+   ), url(../talentoactivo/celebracion.jpg);
+   background-repeat: no-repeat;
+   background-position: center center;
 	-moz-background-size: cover;
-	background-size: cover}
+	
+	background-size: cover
+}
 
 
 .image-v8

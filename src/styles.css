@@ -6,7 +6,7 @@
 @import './assets/plugins/rs-plugin/css/settings.css';
 @import './assets/css/animate/animate.min.css';
 @import './assets/css/style.css';
-@import './assets/css/colors/aqua.css';
+@import './assets/css/colors/light-green.css';
 @import './assets/css/variables.css';
 @import './assets/css/panton/panton.css';
 @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Jacquard+12&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
@@ -267,4 +267,15 @@
       padding: 15px 15px 15px 50px;
       width: 25em;
     }
+  }
+
+
+  .nunito-sans-font {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
   }
