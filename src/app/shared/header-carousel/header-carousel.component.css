@@ -126,7 +126,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    align-content: flex-end;
+    align-content:center;
+}
+.slogan-pie-botones{
+  width: 100%;
+  height: 40%;
+  padding-left: 100px;
+  padding-top: 80px;
+}
+
+
+.container-botones{
+  margin-bottom: 50px;
 }
 
 .slogan{
@@ -170,6 +181,10 @@
 	opacity: 0.9;
 }
 
+/* .caja-boton{
+  border: solid  red;
+} */
+
 @media only screen and (min-width: 100px) and (max-width: 768px) {
     .element-slide{
         @apply h-[85vh] ;
@@ -192,6 +207,7 @@
         align-content: flex-end;
         margin-bottom: 50px;
     }
+
     .slogan{
         margin-bottom: 80px;
     }

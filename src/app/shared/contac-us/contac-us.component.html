@@ -1,6 +1,10 @@
+@if (this.loaderblock) {
+	<div class="container-loader">
+		<div class="loader"></div>
+	</div>
+}
 <section class="padd-tb-30 footer">
 	<div class="container bg-white shadow-lg shadow-green-500/50 w-5/6 m-auto">
-	
 		<div class="row w-full md:w-11/12  m-auto ">
 			
 			<div class="col-md-12">	
@@ -9,13 +13,13 @@
 					<h3>Contáctanos</h3>
 					<div class="separator"></div>
 
-					<form  name="sentMessage" id="contactForm" novalidate>
+					<form #formulario="ngForm" (ngSubmit)="guardarDatosPerfil()" class="form">
 						<div class="row">
 							<div class="control-group form-group col-sm-6">
 								<div class="controls">
 									<label>Nombre y Apellido</label>
 									<div class="separator"></div>
-									<input type="text" class="form-control dark" id="name" placeholder="Nombre" required >
+									<input class="form-control dark" required type="text" autocomplete="off" name="name" placeholder="Nombre y Apellido" id="name" [(ngModel)]="dataFormulario.name" #name="ngModel" required minlength="3">
 									<p class="help-block"></p>
 								</div>
 							</div>
@@ -23,16 +27,19 @@
 								<div class="controls">
 									<label>Empresa</label>
 									<div class="separator"></div>
-									<input type="text" class="form-control dark" id="empresa" placeholder="Empresa" required >
+									<input type="text" class="form-control dark" placeholder="Empresa" autocomplete="off" name="empresa" id="empresa" [(ngModel)]="dataFormulario.empresa" #empresa="ngModel" >
 									<p class="help-block"></p>
+									<p *ngIf="empresa.invalid && empresa.touched">Coloque empresa a la que pertenece o coloque  "No"</p>
+
 								</div>
 							</div>
 							<div class="control-group form-group col-sm-6">
 								<div class="controls">
 									<label>Correo</label>
 									<div class="separator"></div>
-									<input type="Correot" class="form-control dark" id="emailt" placeholder="Correo" required >
+									<input  class="form-control dark" autocomplete="off" placeholder="Correo" type="email" name="email" id="email" [(ngModel)]="dataFormulario.email" #email="ngModel" required >
 									<p class="help-block"></p>
+									<p *ngIf="email.invalid && email.touched">Coloque un email valido"</p>
 								</div>
 							</div>
 							
@@ -40,8 +47,9 @@
 								<div class="controls">
 									<label>Teléfono</label>
 									<div class="separator"></div>
-									<input type="text" class="form-control dark" id="tlf" placeholder="+1-321-884-654654" required >
+									<input type="text" class="form-control dark" placeholder="+1-321-884-654654" autocomplete="off" name="telefono" id="telefono" [(ngModel)]="dataFormulario.telefono" #telefono="ngModel" >
 									<p class="help-block"></p>
+									<p *ngIf="telefono.invalid && telefono.touched">Coloque un email valido"</p>
 								</div>
 							</div>
 						</div>	
@@ -49,13 +57,19 @@
 							<div class="controls" >
 								<label>Mensaje</label>
 								<div class="separator"></div>
-								<textarea class="form-control dark" rows="4" id="mensaje" placeholder="Mensaje" maxlength="999" style="resize:none"></textarea>
+								<textarea class="form-control dark" rows="4" maxlength="999" style="resize:none" autocomplete="off" placeholder="Mensaje" name="mensaje" id="mensaje" [(ngModel)]="dataFormulario.mensaje" #mensaje="ngModel"></textarea>
 								<p class="help-block"></p>
 							</div>
 						</div>
 						<div id="success"></div>
 						<div class="pull-right">
-						<button type="submit" class="btn btn-theme btn-lg">Submit</button>
+						@if (this.buttonblock) {
+							<!-- <button class="btn btn-theme btn-lg" >Enviar</button> -->
+							<button class="btn btn-theme btn-lg" [disabled]="formulario.invalid">Enviar</button>
+                        }
+                        @if (!this.buttonblock) {
+							<button class="btn btn-theme btn-lg" disabled >Enviado!</button>
+                        }
 						</div>
 					</form>
 					<div class="clearfix"></div>
@@ -70,25 +84,3 @@
 							
 	</div><!-- ./container -->
 </section>
-<!-- footer-sub -->
-<div class="footer-sub bg-light-dark padd-tb-10">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<div class="copyright">
-					2024 &copy; talenctoActivo C.A - <a href="http://jonapiscope.com" target="_blank">Elaborado por JonVAG</a>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<ul class="list-inline pull-right">
-					<li><a href="#" class="icon-holder small circle"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#" class="icon-holder small circle"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#" class="icon-holder small circle"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="#" class="icon-holder small circle"><i class="fa fa-google-plus"></i></a></li>
-					<li><a href="#" class="icon-holder small circle"><i class="fa fa-youtube-play"></i></a></li>
-				</ul>
-			</div>	
-		</div><!-- ./row -->
-	</div><!-- ./container -->
-</div>
-<!-- ./footer-sub -->

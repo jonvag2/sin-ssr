@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA, Component, signal } from '@angular/core';
+import { RouterModule } from '@angular/router';
 // import function to register Swiper custom elements
 import { SwiperContainer, register } from 'swiper/element/bundle';
 import { SwiperOptions } from 'swiper/types';
@@ -9,7 +10,7 @@ register();
 @Component({
   selector: 'app-header-carousel',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './header-carousel.component.html',
   template: `

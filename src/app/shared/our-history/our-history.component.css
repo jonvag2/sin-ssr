@@ -4,7 +4,6 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	max-width: 100%;
-	height: 100vh;
 	background-image: linear-gradient(
         to right,
         #606060d7,
@@ -91,13 +90,7 @@ img{
         margin: 20px auto 10px auto;
     }
     .imgflecha{
-        display: flex;
-        justify-content: center;
         height: 55px;
-        background-image: url(./../../../assets/talentoactivo/flecha2.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center center;
     }
     .section{
         height: 100%;
@@ -128,13 +121,7 @@ img{
         margin: 20px auto 10px auto;
     }
     .imgflecha{
-        display: flex;
-        justify-content: center;
         height: 70px;
-        background-image: url(./../../../assets/talentoactivo/flecha2.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center center;
     }
     .section{
         height: 100%;

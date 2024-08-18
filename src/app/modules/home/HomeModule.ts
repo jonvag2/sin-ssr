@@ -15,6 +15,7 @@ import { WhoAreWeComponent } from './components/who-are-we/who-are-we.component'
 import { UneteComponent } from './components/unete/unete.component';
 import { HeaderCarouselComponent } from '../../shared/header-carousel/header-carousel.component';
 import { ContacUsComponent } from "../../shared/contac-us/contac-us.component";
+import { PieFooterComponent } from "../../shared/pie-footer/pie-footer.component";
 
 
 
@@ -37,7 +38,8 @@ import { ContacUsComponent } from "../../shared/contac-us/contac-us.component";
     FooterComponent,
     ConstruccionComponent,
     MethodComponent,
-    ContacUsComponent
+    ContacUsComponent,
+    PieFooterComponent
 ]
 })
 export class HomeModule {
