@@ -23,13 +23,13 @@ export const routes: Routes = [
     redirectTo: '/',
     pathMatch: 'full',
   } */
-  {
+  /* {
     path: "construccion",
     component: ConstruccionComponent,
-  },
+  }, */
   {
     path: '**',
-    redirectTo: 'construccion',
+    redirectTo: 'inicio',
     /* redirectTo: 'error/404', */
   }
 ];
