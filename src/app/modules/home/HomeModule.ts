@@ -16,6 +16,7 @@ import { UneteComponent } from './components/unete/unete.component';
 import { HeaderCarouselComponent } from '../../shared/header-carousel/header-carousel.component';
 import { ContacUsComponent } from "../../shared/contac-us/contac-us.component";
 import { PieFooterComponent } from "../../shared/pie-footer/pie-footer.component";
+import { WhatsappComponent } from '../../shared/whatsapp/whatsapp.component';
 
 
 
@@ -39,7 +40,8 @@ import { PieFooterComponent } from "../../shared/pie-footer/pie-footer.component
     ConstruccionComponent,
     MethodComponent,
     ContacUsComponent,
-    PieFooterComponent
+    PieFooterComponent,
+    WhatsappComponent
 ]
 })
 export class HomeModule {

@@ -4,6 +4,14 @@
     justify-content: space-evenly;
 }
 
+.bg-svg-gray2{
+    fill: #6c6c6c
+    ;
+    stroke:#6c6c6c
+    ;
+  }
+
+
 .locura{
     display: flex;
     justify-content: center;
@@ -17,6 +25,63 @@
 .agrupar{
     width: 80% ;
     margin: auto;
+}
+
+.color-change-2x {
+	-webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
+}
+@-webkit-keyframes color-change-2x {
+    0% {
+      background: #19dcea;
+    }
+    100% {
+      background: #b22cff;
+    }
+  }
+  @keyframes color-change-2x {
+    0% {
+      background: #19dcea;
+    }
+    100% {
+      background: #b22cff;
+    }
+  }
+
+  .bg-pan-top {
+	-webkit-animation: bg-pan-top 8s infinite both;
+	        animation: bg-pan-top 8s infinite both;
+}
+
+@-webkit-keyframes bg-pan-top {
+  0% {
+    background-position: 50% 100%;
+    background-color: #e74c3c ;
+
+  }
+  50% {
+    background-position: 50% 0%;
+    background-color: #a700ae ;
+  }
+  100% {
+    background-position: 50% 0%;
+    background-color: #3498db  ;
+  }
+}
+@keyframes bg-pan-top {
+    0% {
+        background-position: 50% 100%;
+        background-color: #e74c3c ;
+    
+      }
+      50% {
+        background-position: 50% 0%;
+        background-color: #a700ae ;
+      }
+      100% {
+        background-position: 50% 0%;
+        background-color: #3498db  ;
+      }
 }
 
 

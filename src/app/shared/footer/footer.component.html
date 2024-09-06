@@ -13,13 +13,27 @@
 				<div class="card-form">
 					<h1>¿Estás interesado? <br>¡Contáctanos!</h1>
 					<div class="signup">
-						<form target="#">
+						<form #formulario="ngForm" (ngSubmit)="guardarDatosSheety()">
 
-							<input type="email"  id="email"  placeholder="Ingresa tu email...." required>
-							<input type="submit" value="Enviar" id="btn">
+							<input   type="text" autocomplete="off" name="email" id="email" [(ngModel)]="dataFormulario.email" #email="ngModel" required minlength="3" placeholder="Ingresa tu email...." >
+							@if (this.buttonblock) {
+								<!-- <button class="btn btn-theme btn-lg" [disabled]="formulario.invalid">Enviar</button> -->
+							<input type="submit" value="Enviar" id="btn" [disabled]="formulario.invalid">
+
+							}
+							@if (!this.buttonblock && !this.loaderblock) {
+								<!-- <button class="btn btn-theme btn-lg" disabled >Enviado!</button> -->
+							<input type="button" disabled value="Enviado!" id="btn-enviado">
+
+							}
+							@if (!this.buttonblock && this.loaderblock) {
+								<!-- <button class="btn btn-theme btn-lg" disabled >Enviado!</button> -->
+							<input type="button" disabled value="Enviando..." id="btn">
+
+							}
 						</form>
 					</div>
-					<p id="spam"> 0% Spam Tolerance, Unsubscribe any time!</p>
+					<p id="spam"> ¡Nos comprometemos a no enviarte spam.!</p>
 				</div>
 			</div>
 		</div><!-- ./row -->
