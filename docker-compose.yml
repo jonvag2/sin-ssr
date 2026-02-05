@@ -1,0 +1,9 @@
+services:
+  # Servicio de frontend (Angular)
+  frontend:
+    build:
+      context: .  # Ruta a la carpeta de tu proyecto Angular
+      dockerfile: Dockerfile
+    container_name: medidas-front
+    ports:
+    - "3201:80"
