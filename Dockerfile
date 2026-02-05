@@ -35,7 +35,7 @@ COPY --from=build-stage /app/dist/sin-ssr/browser /usr/share/nginx/html
 # Ajuste del Puerto: NGINX estará configurado para escuchar en el puerto 1
 # Alineamos la instrucción EXPOSE con esa configuración para que las plataformas
 # que detectan el puerto por la imagen lo vean correctamente.
-EXPOSE 3201
+EXPOSE 80
 
 # Comando para iniciar NGINX
 CMD ["nginx", "-g", "daemon off;"]
