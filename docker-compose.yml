@@ -4,6 +4,6 @@ services:
     build:
       context: .  # Ruta a la carpeta de tu proyecto Angular
       dockerfile: Dockerfile
-    container_name: talento-front
+    container_name: medidas-front
     ports:
     - "3201:80" 
