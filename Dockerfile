@@ -32,10 +32,10 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 # La ruta correcta es /app/dist/medidas/browser debido al 'application' builder y tu 'outputPath'.
 COPY --from=build-stage /app/dist/sin-ssr /usr/share/nginx/html
 
-# Ajuste del Puerto: NGINX estará configurado para escuchar en el puerto 1
-# Alineamos la instrucción EXPOSE con esa configuración para que las plataformas
+# Ajuste del puerto: NGINX en el contenedor debe escuchar en el puerto 80.
+# Alineamos la instrucción EXPOSE con esa configuración para que plataformas
 # que detectan el puerto por la imagen lo vean correctamente.
-EXPOSE 3201
+EXPOSE 80
 
 # Comando para iniciar NGINX
 CMD ["nginx", "-g", "daemon off;"]
